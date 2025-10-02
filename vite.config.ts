@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite'
 import svgr from "vite-plugin-svgr";
 // import ClosePlugin from './vite-plugin-close';
-import { createRequire } from 'module';
 
 export default defineConfig({
   plugins: [

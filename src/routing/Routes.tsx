@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import DeveloperSignup from "../auth/developer/DeveloperSignUp";
-import LoginPage from "../auth/LoginPage";
+import LoginPage from "../auth/Loginpage";
 import UserSignup from "../auth/user/UserSignUp";
 import AuthLayout from "../components/layouts/AuthLayout";
 import MainLayout from "../components/layouts/MainLayout";

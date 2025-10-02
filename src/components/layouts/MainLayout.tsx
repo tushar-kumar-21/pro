@@ -30,7 +30,7 @@ function MainLayout() {
             className="max-w-[1860px] mx-auto"
         >
             <div className="space-y-3">
-                <Header setSidebarOpen={setSidebarOpen} />
+                <Header />
                 {/* <UserHeader setSidebarOpen={setSidebarOpen} /> */}
                 <div
                     // className="flex text-white overflow-y-auto min-h-[calc(100vh-75px)] max-h-[calc(100vh-75px)] pb-5"

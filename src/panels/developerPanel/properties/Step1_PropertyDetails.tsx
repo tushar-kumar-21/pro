@@ -49,7 +49,6 @@ const Step1_PropertyDetails: React.FC<Step1_PropertyDetailsProps> = ({ formik, n
                 name: values.amenityName,
                 icon: <img src={URL.createObjectURL(values.amenityIcon)} alt={values.amenityName} className="h-6 w-6" />
             };
-            setAmenities([...amenities, newAmenity]);
             formik.setFieldValue('amenities', [...formik.values.amenities, newAmenity.name]);
             setIsModalOpen(false);
             amenityFormik.resetForm();
@@ -61,7 +60,7 @@ const Step1_PropertyDetails: React.FC<Step1_PropertyDetailsProps> = ({ formik, n
         if (Object.keys(errors).length === 0) {
             nextStep();
         } else {
-            formik.setTouched(errors);
+            formik.setTouched(errors || "" as any);
         }
     };
 
