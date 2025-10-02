@@ -15,7 +15,7 @@ export default defineConfig({
     global: 'window', // 👈 polyfill global
   },
   server: {
-    host: "0.0.0.0", // Replace with your EC2 private IP
+    host: "34.201.112.82", // Replace with your EC2 private IP
     port: 5173
   }
 }); 
