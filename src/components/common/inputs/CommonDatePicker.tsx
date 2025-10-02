@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { twMerge } from "tailwind-merge";
-import { FormikProps } from "formik";
+import type { FormikProps } from "formik";
 
 interface DatePickerProps {
   label?: string;
@@ -21,7 +21,7 @@ interface DatePickerProps {
 
 const DatePicker: React.FC<DatePickerProps> = ({
   label = "",
-  name,
+  name = "",
   value,
   onChange,
   error,

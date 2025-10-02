@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
 import { IoMdArrowDropdown, IoMdClose } from "react-icons/io";
 import { twMerge } from "tailwind-merge";
-import type { FormikProps } from "formik";
 
 interface Option {
   optionId: string | number; // ✅ changed from id → optionId

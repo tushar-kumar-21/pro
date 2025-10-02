@@ -1,20 +1,19 @@
+import { useFormik } from "formik";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { postRequest } from "../../apis/apiRequests";
+import { userEndpoints } from "../../apis/endpoints";
 import ImageComponent from "../../components/ImageComponent";
 import CommonButton from "../../components/common/buttons/CommonButton";
 import CommonThemeInput from "../../components/common/inputs/CommonThemeInput";
 import CommonHeading from "../../components/common/typography/CommonHeading";
-import { useRoutePath } from "../../hooks/useRoutePath";
 import { roles } from "../../utils/constants";
-import { useFormik } from "formik";
-import { userSignupSchema } from "../schema";
-import { userEndpoints } from "../../apis/endpoints";
 import { userStaticRoutes } from "../../utils/urlHelper";
-import { postRequest } from "../../apis/apiRequests";
+import { userSignupSchema } from "../schema";
 
 const UserSignup = () => {
     //   const session = storage();
-    const path = useRoutePath(1) || roles.ADMIN;
+    // const path = useRoutePath(1) || roles.ADMIN;
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const navigate = useNavigate();
 
@@ -105,7 +104,7 @@ const UserSignup = () => {
                             />
                             <div className="flex justify-end items-end mt-1">
                                 <Link
-                                    // to={authStaticRoutes.forgetPassword()}
+                                    to={"#"}
                                     className="text-orangePrimary font-medium text-sm items-end"
                                 >
                                     Forget Passowrd?

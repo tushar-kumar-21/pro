@@ -50,6 +50,7 @@ const LoginPage = () => {
                         console.warn("Unknown role:", path);
                         break;
                 }
+                console.log("Login response:", res);
             } catch (error) {
             } finally {
                 setIsLoading(false);
@@ -103,7 +104,7 @@ const LoginPage = () => {
                             />
                             <div className="flex justify-end items-end mt-1">
                                 <Link
-                                    // to={authStaticRoutes.forgetPassword()}
+                                    to={"#"}
                                     className="text-orangePrimary font-medium text-sm items-end"
                                 >
                                     Forget Passowrd?

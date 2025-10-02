@@ -14,9 +14,9 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   (config) => {
-    const token: any = sessionStorage.getItem(
-      import.meta.env.VITE_SECURITY_KEY || "CATHY_DESIGNOWEB"
-    );
+    // const token: any = sessionStorage.getItem(
+    //   import.meta.env.VITE_SECURITY_KEY || "CATHY_DESIGNOWEB"
+    // );
     // const authToken = decodeToken(token) || "";
     const authToken =  "";
     if (authToken != "") {

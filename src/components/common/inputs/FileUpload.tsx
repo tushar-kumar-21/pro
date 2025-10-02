@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { FiUploadCloud } from 'react-icons/fi';
-import { FaRegTrashAlt, FaRegEye, FaFilePdf, FaCheckCircle } from 'react-icons/fa';
+import { FaRegTrashAlt, FaCheckCircle } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 
 interface FileUploadProps {

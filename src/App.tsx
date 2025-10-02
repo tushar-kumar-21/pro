@@ -1,10 +1,8 @@
-import React from 'react'
 import RouterComponent from './routing/RouterComponent';
 
 const App = () => {
   return (
-    <RouterComponent/>
+    <RouterComponent />
   )
 }
-
 export default App;

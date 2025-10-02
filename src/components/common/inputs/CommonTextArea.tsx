@@ -30,7 +30,6 @@ const CommonThemeTextArea: React.FC<CommonThemeTextAreaProps> = ({
   cols = 50,
   label = "",
   placeholder = "",
-  mainClass = "",
   inputClass = "",
   id = "",
   onChange,

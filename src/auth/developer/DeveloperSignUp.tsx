@@ -1,20 +1,18 @@
+import { useFormik } from "formik";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { postRequest } from "../../apis/apiRequests";
+import { developerEndpoints } from "../../apis/endpoints";
 import ImageComponent from "../../components/ImageComponent";
 import CommonButton from "../../components/common/buttons/CommonButton";
 import CommonThemeInput from "../../components/common/inputs/CommonThemeInput";
 import CommonHeading from "../../components/common/typography/CommonHeading";
-import { useRoutePath } from "../../hooks/useRoutePath";
 import { roles } from "../../utils/constants";
-import { useFormik } from "formik";
-import { developerSignupSchema } from "../schema";
-import { postRequest } from "../../apis/apiRequests";
-import { developerEndpoints } from "../../apis/endpoints";
 import { developerStaticRoutes } from "../../utils/urlHelper";
+import { developerSignupSchema } from "../schema";
 
 const DeveloperSignup = () => {
     //   const session = storage();
-    const path = useRoutePath(1) || roles.ADMIN;
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const navigate = useNavigate();
 
@@ -42,6 +40,8 @@ const DeveloperSignup = () => {
                 setIsLoading(true);
                 const res = await postRequest(developerEndpoints.signup, payload)
                 navigate(developerStaticRoutes.toDashBoard());
+                console.log(res);
+                
             } catch (error) {
             } finally {
                 setIsLoading(false);
@@ -123,7 +123,7 @@ const DeveloperSignup = () => {
                             />
                             <div className="flex justify-end items-end mt-1">
                                 <Link
-                                    // to={authStaticRoutes.forgetPassword()}
+                                    to={"#"}
                                     className="text-orangePrimary font-medium text-sm items-end"
                                 >
                                     Forget Passowrd?
