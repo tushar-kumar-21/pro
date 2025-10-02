@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #faefe6;
+  --green-primary: #337e72;
+  --secondary-color: #2ecc71;
+  --green-light: #014a1f96;
+  --font-size: 16px;
+  --padding: 10px;
+  --red-danger: #fd4249;
+  --purple: #bba3ce;
+  --color-blackPrimary: #001530;
+  --color-black-background: #071b35;
+  --color-heading: #111111;
+}
+
+@theme {
+  --color-lightBlack: #00000080; /* semi-transparent black */
+  /* COLORS */
+  --color-primary: #faefe6;
+  --color-whitePrimary: #ffffff;
+  --color-whiteSecondary: #F9FAFC;
+  --color-secondary: #000000;
+  --color-text: #000000;
+
+  /* BLACK */
+  --color-blackDark: #151515;
+  --color-blackSecondary: #001530;
+  --color-black-background: #071b35;
+
+  /* GREY */
+  --color-greyPrimary: #525252;
+  --color-greyDark: #6B7280;
+  --color-lightGrey: #828282;
+  --color-greyDim: #ded2d9;
+  --color-greySecondary: #E5E7EB;
+
+  /* GREEN */
+  --color-greenPrimary: #008000;
+  --color-greenDim: #f5f8ff;
+  --color-greenSecondary: #0EAD69;
+  --color-greenMedium: #008000;
+
+  /* YELLOW */
+  --color-yellowPrimary: #ecd07c;
+  --color-lightYellow: #ff9a08;
+  --color-yellowSecondary: #EAB308;
+  --color-yellowDim: #FFF4D5;
+  --color-yellowShadow: #f0d996;
+  --color-yellowLight: #FFA500;
+  --color-yellowBright: #F4B804;
+
+  /* RED */
+  --color-redPrimary: #c30000;
+  --color-redBright: #FF0707;
+
+  /* ORANGE */
+  --color-orangeDim: #fff5eb;
+  --color-orangePrimary: #C7A37F;
+
+  /* SILVER */
+  --color-silverDim: #f5f8ff;
+  --color-silverPrimary: #0450b4;
+  --color-silverSecondary: #b3b9c124;
+
+  /* WHITE */
+  --color-whiteDim: #1f3048;
+
+  --color-blue-background: #000e3d;
+
+  --color-gray-primary: #757575;
+  --color-gray-secondary: #2B2B40;
+
+  --color-white-secondary: #ffffff33;
+}
+
+.container{
+  padding: 0 50px;
+}
+.custom_menubar{
+  background: #FFFFFF14;
+  border: 1px solid #FFFFFF29;
+  backdrop-filter: blur(3px)
+}
+.custom_header_bg{
+  background: #FFFFFF14;
+  backdrop-filter: blur(30px)
+}
+.bg_morphism{
+  background: #FFFFFF1A;
+  backdrop-filter: blur(10px)
+}
+
+.lightblackbg {
+  background-color: var(--color-lightBlack);
+}
